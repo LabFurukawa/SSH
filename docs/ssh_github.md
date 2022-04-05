@@ -29,7 +29,7 @@ GitHubからコードをcloneしてくる方法にSSHを用いる方法がある
 
 	![](./image/git_ssh.png)
 
-	ここからSSH keysを追加する。
+	ここから`ssh-keygen`で生成した公開鍵(.pub)の中身をコピペし追加する。
 
 	![](./image/git_ssh_key.png)
 
