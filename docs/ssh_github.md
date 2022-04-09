@@ -35,13 +35,13 @@ GitHubからコードをcloneしてくる方法にSSHを用いる方法がある
 
 3. ssh_configを作成
 
-	`ssh_config.d/`に`github.conf`でも追加
+	`/etc/ssh/ssh_config`に追記、あるいは"/etc/ssh/ssh_config"から`Include`で取り込まれる`/etc/ssh/ssh_config.d/`に`github.conf`でも追加(後者を推奨)。
 
-	Windowsの場合は~/.ssh/configなどに追記
+	Windowsの場合は`~/.ssh/config`などに追記
 
 	```
 	Host github.com
-		Name git
+		User git
 		HostName github.com
 		IdentityFile _SECRET_KEY_PATH_
 	```
